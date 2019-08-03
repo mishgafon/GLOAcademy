@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mishgafon/JavaScript.git"
+    "url": "git+https://github.com/mishgafon/GLOAcademy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mishgafon/JavaScript/issues"
+    "url": "https://github.com/mishgafon/GLOAcademy/issues"
   },
-  "homepage": "https://github.com/mishgafon/JavaScript#readme",
+  "homepage": "https://github.com/mishgafon/GLOAcademy#readme",
   "devDependencies": {
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
