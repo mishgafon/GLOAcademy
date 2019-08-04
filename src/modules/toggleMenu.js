@@ -1,6 +1,8 @@
 const toggleMenu = () => {
-    const menu = document.querySelector('menu'),
-        body = document.body;
+    const body = document.body,
+        menu = document.querySelector('menu');
+        
+
 
         body.addEventListener('click', (event) => {
             let target = event.target;
