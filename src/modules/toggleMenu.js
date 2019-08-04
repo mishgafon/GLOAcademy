@@ -1,16 +1,16 @@
 const toggleMenu = () => {
-    const 	btnMenu = document.querySelector('.menu'),
-        menu = document.querySelector('menu'),
-        closeBtn = document.querySelector('.close-btn'),
-        menuItems = menu.querySelectorAll('ul>li');
+    const menu = document.querySelector('menu'),
+        body = document.body;
 
+        body.addEventListener('click', (event) => {
+            let target = event.target;
 
-    const handlerMenu = () => {
-        menu.classList.toggle('active-menu');
-    };
-        btnMenu.addEventListener('click', handlerMenu);
-        closeBtn.addEventListener('click', handlerMenu);
-        menuItems.forEach((elem) => elem.addEventListener('click', handlerMenu));
+            if(target.closest('.menu')) {
+                menu.classList.add('active-menu');
+            } else if (!target.classList.contains('active-menu')) {
+                menu.classList.remove('active-menu');
+            } 
+        });
 };
 
 export default toggleMenu;
